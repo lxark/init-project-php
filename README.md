@@ -1,0 +1,1 @@
+Init-project php just host useful files to initialize a project
