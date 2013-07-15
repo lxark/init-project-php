@@ -1,0 +1,27 @@
+{
+    "name": "lxark/init-project-php",
+    "description": "Init-project php just host useful files to initialize a project",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*@dev",
+        "sebastian/phpcpd": "dev-fuzzy",
+        "zerkalica/phpcs": "dev-master",
+        "pdepend/pdepend": "dev-master",
+        "phpmd/phpmd": "dev-master",
+        "covex-nn/phpcb": "1.0.*@dev",
+        "phploc/phploc": "dev-master"
+    },
+    "scripts": {},
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3-dev"
+        }
+    }
+}
