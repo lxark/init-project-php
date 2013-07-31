@@ -7,21 +7,23 @@
     "require-dev": {
         "phpunit/phpunit": "3.7.*@dev",
         "sebastian/phpcpd": "dev-fuzzy",
-        "zerkalica/phpcs": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master",
         "pdepend/pdepend": "dev-master",
         "phpmd/phpmd": "dev-master",
         "covex-nn/phpcb": "1.0.*@dev",
         "phploc/phploc": "dev-master"
     },
-    "scripts": {},
+    "scripts": {
+        "post-install-cmd": [
+            "ln -sf ../vendor/squizlabs/php_codesniffer/scripts/phpcs bin/phpcs"
+        ],
+        "post-update-cmd": [
+            "ln -sf ../vendor/squizlabs/php_codesniffer/scripts/phpcs bin/phpcs"
+        ]
+    },
     "config": {
         "bin-dir": "bin"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.3-dev"
-        }
-    }
+    "prefer-stable": true
 }

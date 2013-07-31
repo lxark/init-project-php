@@ -64,7 +64,7 @@ phpcpd: reports
 phpcs: reports
 	if [ -L bin/phpcs ] ; then \
 		echo '-------------- phpcs ------------------' ; \
-		bin/phpcs src --standard=Symfony2 --extensions=php --report=checkstyle --report-file=reports/checkstyle.xml ; \
+		bin/phpcs src --standard=PSR2 --extensions=php --report=checkstyle --report-file=reports/checkstyle.xml ; \
 		echo '-------------- end phpcs ------------------' ; \
 	else \
 		echo 'Cannot find phpcs binary. Please run make composer-install' ; \
@@ -82,10 +82,10 @@ reports:
 
 
 install: get-composer
-	php bin/composer.phar install
+	php bin/composer.phar install -v
 
 update: get-composer
-	php bin/composer.phar update
+	php bin/composer.phar update -v
 
 
 dev-install: install-hooks get-composer
