@@ -10,9 +10,8 @@
         "pdepend/pdepend": "dev-master",
         "phpmd/phpmd": "dev-master",
         "covex-nn/phpcb": "1.0.*@dev",
-        "phploc/phploc": "dev-master"
-    },
-    "require-dev": {
+        "phploc/phploc": "dev-master",
+
         "lxark/init-project-git": "dev-master"
     },
     "scripts": {
