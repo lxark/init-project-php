@@ -2,16 +2,18 @@
     "name": "lxark/init-project-php",
     "description": "Init-project php just host useful files to initialize a project",
     "require": {
-        "php": ">=5.3.3"
-    },
-    "require-dev": {
+        "php": ">=5.3.3",
+
         "phpunit/phpunit": "3.7.*@dev",
-        "sebastian/phpcpd": "dev-fuzzy",
+        "sebastian/phpcpd": "2.0.*@dev",
         "squizlabs/php_codesniffer": "dev-master",
         "pdepend/pdepend": "dev-master",
         "phpmd/phpmd": "dev-master",
         "covex-nn/phpcb": "1.0.*@dev",
         "phploc/phploc": "dev-master"
+    },
+    "require-dev": {
+        "lxark/init-project-git": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -24,6 +26,12 @@
     "config": {
         "bin-dir": "bin"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lxark/init-project-git.git"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
