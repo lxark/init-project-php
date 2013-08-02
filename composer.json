@@ -1,6 +1,16 @@
 {
     "name": "lxark/init-project-php",
     "description": "Init-project php just host useful files to initialize a project",
+    "keywords": ["php", "init", "makefile"],
+    "time": "2013-08-02",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alix Chaysinh",
+            "email": "alix.chaysinh@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
 
@@ -13,14 +23,6 @@
         "phploc/phploc": "dev-master",
 
         "lxark/init-project-git": "dev-master"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "ln -sf ../vendor/squizlabs/php_codesniffer/scripts/phpcs bin/phpcs"
-        ],
-        "post-update-cmd": [
-            "ln -sf ../vendor/squizlabs/php_codesniffer/scripts/phpcs bin/phpcs"
-        ]
     },
     "config": {
         "bin-dir": "bin"
