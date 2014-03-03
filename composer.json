@@ -15,12 +15,14 @@
         "php": ">=5.3.3",
 
         "phpunit/phpunit": "3.7.*@dev",
+        "phpunit/php-code-coverage": "1.2.*@dev",
         "sebastian/phpcpd": "2.0.*@dev",
         "squizlabs/php_codesniffer": "dev-master",
-        "pdepend/pdepend": "dev-master",
-        "phpmd/phpmd": "dev-master",
+        "pdepend/pdepend": "1.1.1",
+        "phpmd/phpmd": "1.5.0",
         "covex-nn/phpcb": "1.0.*@dev",
         "phploc/phploc": "dev-master",
+        "theseer/phpdox": "0.5.*@dev",
 
         "lxark/init-project-git": "dev-master"
     },
